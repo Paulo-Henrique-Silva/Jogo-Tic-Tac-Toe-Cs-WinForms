@@ -29,366 +29,381 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_Jogo));
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.customButton1 = new TIC_TAC_TOE.Controles.CustomButton();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.Lbl_ModoDeJogo = new System.Windows.Forms.Label();
+            this.Cbx_Modo = new System.Windows.Forms.ComboBox();
+            this.Cbx_Dific = new System.Windows.Forms.ComboBox();
+            this.Lbl_Dific = new System.Windows.Forms.Label();
+            this.Lbl_Placar = new System.Windows.Forms.Label();
+            this.Pbx_PlacarX = new System.Windows.Forms.PictureBox();
+            this.Pbx_PlacarO = new System.Windows.Forms.PictureBox();
+            this.Lbl_PlacarX = new System.Windows.Forms.Label();
+            this.Lbl_PlacarO = new System.Windows.Forms.Label();
+            this.Pbx_Grid = new System.Windows.Forms.PictureBox();
+            this.Btn_Q4 = new System.Windows.Forms.Button();
+            this.Btn_Q0 = new System.Windows.Forms.Button();
+            this.Btn_Q5 = new System.Windows.Forms.Button();
+            this.Btn_Q2 = new System.Windows.Forms.Button();
+            this.Btn_Q3 = new System.Windows.Forms.Button();
+            this.Btn_Q6 = new System.Windows.Forms.Button();
+            this.Btn_Q7 = new System.Windows.Forms.Button();
+            this.Btn_Q1 = new System.Windows.Forms.Button();
+            this.Btn_Q8 = new System.Windows.Forms.Button();
+            this.Btn_Reiniciar = new TIC_TAC_TOE.Controles.CustomButton();
+            this.Llb_Perfil = new System.Windows.Forms.LinkLabel();
+            this.Llb_Planejamento = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbx_Grid)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // Lbl_ModoDeJogo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.label1.Location = new System.Drawing.Point(19, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(210, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Modo de Jogo";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_ModoDeJogo.AutoSize = true;
+            this.Lbl_ModoDeJogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_ModoDeJogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Lbl_ModoDeJogo.Location = new System.Drawing.Point(19, 28);
+            this.Lbl_ModoDeJogo.Name = "Lbl_ModoDeJogo";
+            this.Lbl_ModoDeJogo.Size = new System.Drawing.Size(210, 33);
+            this.Lbl_ModoDeJogo.TabIndex = 0;
+            this.Lbl_ModoDeJogo.Text = "Modo de Jogo";
+            this.Lbl_ModoDeJogo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox1
+            // Cbx_Modo
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.DropDownWidth = 210;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.Cbx_Modo.BackColor = System.Drawing.Color.White;
+            this.Cbx_Modo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbx_Modo.DropDownWidth = 210;
+            this.Cbx_Modo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cbx_Modo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cbx_Modo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.Cbx_Modo.FormattingEnabled = true;
+            this.Cbx_Modo.Items.AddRange(new object[] {
             "Jogador Vs Jogador",
             "Jogador Vs Computador"});
-            this.comboBox1.Location = new System.Drawing.Point(235, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(210, 32);
-            this.comboBox1.TabIndex = 0;
+            this.Cbx_Modo.Location = new System.Drawing.Point(235, 28);
+            this.Cbx_Modo.Name = "Cbx_Modo";
+            this.Cbx_Modo.Size = new System.Drawing.Size(210, 32);
+            this.Cbx_Modo.TabIndex = 0;
             // 
-            // comboBox2
+            // Cbx_Dific
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.BackColor = System.Drawing.Color.White;
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.Cbx_Dific.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cbx_Dific.BackColor = System.Drawing.Color.White;
+            this.Cbx_Dific.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cbx_Dific.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Cbx_Dific.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cbx_Dific.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.Cbx_Dific.FormattingEnabled = true;
+            this.Cbx_Dific.Items.AddRange(new object[] {
             "Fácil",
             "Médio",
             "Difícil"});
-            this.comboBox2.Location = new System.Drawing.Point(716, 29);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(210, 32);
-            this.comboBox2.TabIndex = 1;
+            this.Cbx_Dific.Location = new System.Drawing.Point(716, 29);
+            this.Cbx_Dific.Name = "Cbx_Dific";
+            this.Cbx_Dific.Size = new System.Drawing.Size(210, 32);
+            this.Cbx_Dific.TabIndex = 1;
+            this.Cbx_Dific.Visible = false;
             // 
-            // label2
+            // Lbl_Dific
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.label2.Location = new System.Drawing.Point(539, 29);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 33);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Dificuldade";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_Dific.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_Dific.AutoSize = true;
+            this.Lbl_Dific.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Dific.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Lbl_Dific.Location = new System.Drawing.Point(539, 29);
+            this.Lbl_Dific.Name = "Lbl_Dific";
+            this.Lbl_Dific.Size = new System.Drawing.Size(171, 33);
+            this.Lbl_Dific.TabIndex = 2;
+            this.Lbl_Dific.Text = "Dificuldade";
+            this.Lbl_Dific.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_Dific.Visible = false;
             // 
-            // label3
+            // Lbl_Placar
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.label3.Location = new System.Drawing.Point(1007, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 33);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Placar";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_Placar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_Placar.AutoSize = true;
+            this.Lbl_Placar.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Placar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Lbl_Placar.Location = new System.Drawing.Point(1007, 27);
+            this.Lbl_Placar.Name = "Lbl_Placar";
+            this.Lbl_Placar.Size = new System.Drawing.Size(104, 33);
+            this.Lbl_Placar.TabIndex = 4;
+            this.Lbl_Placar.Text = "Placar";
+            this.Lbl_Placar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // Pbx_PlacarX
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1129, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
+            this.Pbx_PlacarX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pbx_PlacarX.Image = ((System.Drawing.Image)(resources.GetObject("Pbx_PlacarX.Image")));
+            this.Pbx_PlacarX.Location = new System.Drawing.Point(1129, 26);
+            this.Pbx_PlacarX.Name = "Pbx_PlacarX";
+            this.Pbx_PlacarX.Size = new System.Drawing.Size(36, 36);
+            this.Pbx_PlacarX.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Pbx_PlacarX.TabIndex = 5;
+            this.Pbx_PlacarX.TabStop = false;
             // 
-            // pictureBox2
+            // Pbx_PlacarO
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1235, 27);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(35, 35);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
+            this.Pbx_PlacarO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pbx_PlacarO.Image = ((System.Drawing.Image)(resources.GetObject("Pbx_PlacarO.Image")));
+            this.Pbx_PlacarO.Location = new System.Drawing.Point(1235, 27);
+            this.Pbx_PlacarO.Name = "Pbx_PlacarO";
+            this.Pbx_PlacarO.Size = new System.Drawing.Size(35, 35);
+            this.Pbx_PlacarO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.Pbx_PlacarO.TabIndex = 6;
+            this.Pbx_PlacarO.TabStop = false;
             // 
-            // label4
+            // Lbl_PlacarX
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.label4.Location = new System.Drawing.Point(1180, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 33);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "0";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_PlacarX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_PlacarX.AutoSize = true;
+            this.Lbl_PlacarX.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_PlacarX.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Lbl_PlacarX.Location = new System.Drawing.Point(1180, 29);
+            this.Lbl_PlacarX.Name = "Lbl_PlacarX";
+            this.Lbl_PlacarX.Size = new System.Drawing.Size(32, 33);
+            this.Lbl_PlacarX.TabIndex = 7;
+            this.Lbl_PlacarX.Text = "0";
+            this.Lbl_PlacarX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // Lbl_PlacarO
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.label5.Location = new System.Drawing.Point(1277, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 33);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "0";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Lbl_PlacarO.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_PlacarO.AutoSize = true;
+            this.Lbl_PlacarO.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_PlacarO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Lbl_PlacarO.Location = new System.Drawing.Point(1277, 29);
+            this.Lbl_PlacarO.Name = "Lbl_PlacarO";
+            this.Lbl_PlacarO.Size = new System.Drawing.Size(32, 33);
+            this.Lbl_PlacarO.TabIndex = 8;
+            this.Lbl_PlacarO.Text = "0";
+            this.Lbl_PlacarO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox3
+            // Pbx_Grid
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(345, 102);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(694, 540);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
+            this.Pbx_Grid.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Pbx_Grid.Image = ((System.Drawing.Image)(resources.GetObject("Pbx_Grid.Image")));
+            this.Pbx_Grid.Location = new System.Drawing.Point(345, 102);
+            this.Pbx_Grid.Name = "Pbx_Grid";
+            this.Pbx_Grid.Size = new System.Drawing.Size(694, 540);
+            this.Pbx_Grid.TabIndex = 9;
+            this.Pbx_Grid.TabStop = false;
             // 
-            // button1
+            // Btn_Q4
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(598, 290);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(177, 154);
-            this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = false;
+            this.Btn_Q4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q4.BackColor = System.Drawing.Color.White;
+            this.Btn_Q4.FlatAppearance.BorderSize = 0;
+            this.Btn_Q4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q4.Location = new System.Drawing.Point(598, 290);
+            this.Btn_Q4.Name = "Btn_Q4";
+            this.Btn_Q4.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q4.TabIndex = 6;
+            this.Btn_Q4.UseVisualStyleBackColor = false;
+            this.Btn_Q4.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // button2
+            // Btn_Q0
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(415, 130);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 154);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = false;
+            this.Btn_Q0.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q0.BackColor = System.Drawing.Color.White;
+            this.Btn_Q0.FlatAppearance.BorderSize = 0;
+            this.Btn_Q0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q0.Location = new System.Drawing.Point(415, 130);
+            this.Btn_Q0.Name = "Btn_Q0";
+            this.Btn_Q0.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q0.TabIndex = 2;
+            this.Btn_Q0.UseVisualStyleBackColor = false;
+            this.Btn_Q0.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // button3
+            // Btn_Q5
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(782, 290);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(177, 154);
-            this.button3.TabIndex = 7;
-            this.button3.UseVisualStyleBackColor = false;
+            this.Btn_Q5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q5.BackColor = System.Drawing.Color.White;
+            this.Btn_Q5.FlatAppearance.BorderSize = 0;
+            this.Btn_Q5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q5.Location = new System.Drawing.Point(782, 290);
+            this.Btn_Q5.Name = "Btn_Q5";
+            this.Btn_Q5.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q5.TabIndex = 7;
+            this.Btn_Q5.UseVisualStyleBackColor = false;
+            this.Btn_Q5.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // button4
+            // Btn_Q2
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(783, 128);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(177, 154);
-            this.button4.TabIndex = 4;
-            this.button4.UseVisualStyleBackColor = false;
+            this.Btn_Q2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q2.BackColor = System.Drawing.Color.White;
+            this.Btn_Q2.FlatAppearance.BorderSize = 0;
+            this.Btn_Q2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q2.Location = new System.Drawing.Point(783, 128);
+            this.Btn_Q2.Name = "Btn_Q2";
+            this.Btn_Q2.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q2.TabIndex = 4;
+            this.Btn_Q2.UseVisualStyleBackColor = false;
+            this.Btn_Q2.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // button5
+            // Btn_Q3
             // 
-            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(415, 290);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(177, 154);
-            this.button5.TabIndex = 5;
-            this.button5.UseVisualStyleBackColor = false;
+            this.Btn_Q3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q3.BackColor = System.Drawing.Color.White;
+            this.Btn_Q3.FlatAppearance.BorderSize = 0;
+            this.Btn_Q3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q3.Location = new System.Drawing.Point(415, 290);
+            this.Btn_Q3.Name = "Btn_Q3";
+            this.Btn_Q3.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q3.TabIndex = 5;
+            this.Btn_Q3.UseVisualStyleBackColor = false;
+            this.Btn_Q3.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // button6
+            // Btn_Q6
             // 
-            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(415, 450);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(177, 154);
-            this.button6.TabIndex = 8;
-            this.button6.UseVisualStyleBackColor = false;
+            this.Btn_Q6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q6.BackColor = System.Drawing.Color.White;
+            this.Btn_Q6.FlatAppearance.BorderSize = 0;
+            this.Btn_Q6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q6.Location = new System.Drawing.Point(415, 450);
+            this.Btn_Q6.Name = "Btn_Q6";
+            this.Btn_Q6.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q6.TabIndex = 8;
+            this.Btn_Q6.UseVisualStyleBackColor = false;
+            this.Btn_Q6.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // button7
+            // Btn_Q7
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(598, 450);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(177, 154);
-            this.button7.TabIndex = 9;
-            this.button7.UseVisualStyleBackColor = false;
+            this.Btn_Q7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q7.BackColor = System.Drawing.Color.White;
+            this.Btn_Q7.FlatAppearance.BorderSize = 0;
+            this.Btn_Q7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q7.Location = new System.Drawing.Point(598, 450);
+            this.Btn_Q7.Name = "Btn_Q7";
+            this.Btn_Q7.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q7.TabIndex = 9;
+            this.Btn_Q7.UseVisualStyleBackColor = false;
+            this.Btn_Q7.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // button8
+            // Btn_Q1
             // 
-            this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button8.BackColor = System.Drawing.Color.White;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(599, 130);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(177, 154);
-            this.button8.TabIndex = 3;
-            this.button8.UseVisualStyleBackColor = false;
+            this.Btn_Q1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q1.BackColor = System.Drawing.Color.White;
+            this.Btn_Q1.FlatAppearance.BorderSize = 0;
+            this.Btn_Q1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q1.Location = new System.Drawing.Point(599, 130);
+            this.Btn_Q1.Name = "Btn_Q1";
+            this.Btn_Q1.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q1.TabIndex = 3;
+            this.Btn_Q1.UseVisualStyleBackColor = false;
+            this.Btn_Q1.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // button9
+            // Btn_Q8
             // 
-            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(782, 451);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(177, 154);
-            this.button9.TabIndex = 10;
-            this.button9.UseVisualStyleBackColor = false;
+            this.Btn_Q8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Q8.BackColor = System.Drawing.Color.White;
+            this.Btn_Q8.FlatAppearance.BorderSize = 0;
+            this.Btn_Q8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Q8.Location = new System.Drawing.Point(782, 451);
+            this.Btn_Q8.Name = "Btn_Q8";
+            this.Btn_Q8.Size = new System.Drawing.Size(177, 154);
+            this.Btn_Q8.TabIndex = 10;
+            this.Btn_Q8.UseVisualStyleBackColor = false;
+            this.Btn_Q8.Click += new System.EventHandler(this.UsuarioJogou);
             // 
-            // customButton1
+            // Btn_Reiniciar
             // 
-            this.customButton1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.customButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.customButton1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.customButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(192)))));
-            this.customButton1.BorderRadius = 5;
-            this.customButton1.BorderSize = 2;
-            this.customButton1.FlatAppearance.BorderSize = 0;
-            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.customButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.customButton1.ForeColor = System.Drawing.Color.White;
-            this.customButton1.Location = new System.Drawing.Point(551, 681);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(264, 36);
-            this.customButton1.TabIndex = 12;
-            this.customButton1.Text = "Reiniciar Jogo";
-            this.customButton1.TextColor = System.Drawing.Color.White;
-            this.customButton1.UseVisualStyleBackColor = false;
+            this.Btn_Reiniciar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Btn_Reiniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Btn_Reiniciar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Btn_Reiniciar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(192)))));
+            this.Btn_Reiniciar.BorderRadius = 5;
+            this.Btn_Reiniciar.BorderSize = 2;
+            this.Btn_Reiniciar.FlatAppearance.BorderSize = 0;
+            this.Btn_Reiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Reiniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Reiniciar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Reiniciar.Location = new System.Drawing.Point(551, 681);
+            this.Btn_Reiniciar.Name = "Btn_Reiniciar";
+            this.Btn_Reiniciar.Size = new System.Drawing.Size(264, 36);
+            this.Btn_Reiniciar.TabIndex = 12;
+            this.Btn_Reiniciar.Text = "Reiniciar Jogo";
+            this.Btn_Reiniciar.TextColor = System.Drawing.Color.White;
+            this.Btn_Reiniciar.UseVisualStyleBackColor = false;
+            this.Btn_Reiniciar.Click += new System.EventHandler(this.ReiniciarJogo);
             // 
-            // linkLabel1
+            // Llb_Perfil
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.linkLabel1.LinkArea = new System.Windows.Forms.LinkArea(12, 33);
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.linkLabel1.Location = new System.Drawing.Point(20, 686);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(322, 29);
-            this.linkLabel1.TabIndex = 11;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Criado por: Paulo-Henrique-Silva";
-            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel1.UseCompatibleTextRendering = true;
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Llb_Perfil.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Llb_Perfil.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Llb_Perfil.AutoSize = true;
+            this.Llb_Perfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Llb_Perfil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.Llb_Perfil.LinkArea = new System.Windows.Forms.LinkArea(12, 33);
+            this.Llb_Perfil.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Llb_Perfil.Location = new System.Drawing.Point(20, 686);
+            this.Llb_Perfil.Name = "Llb_Perfil";
+            this.Llb_Perfil.Size = new System.Drawing.Size(322, 29);
+            this.Llb_Perfil.TabIndex = 11;
+            this.Llb_Perfil.TabStop = true;
+            this.Llb_Perfil.Text = "Criado por: Paulo-Henrique-Silva";
+            this.Llb_Perfil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Llb_Perfil.UseCompatibleTextRendering = true;
+            this.Llb_Perfil.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Llb_Perfil.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.IrNoPerfil);
             // 
-            // linkLabel2
+            // Llb_Planejamento
             // 
-            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.linkLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
-            this.linkLabel2.LinkArea = new System.Windows.Forms.LinkArea(18, 33);
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.linkLabel2.Location = new System.Drawing.Point(993, 663);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(316, 52);
-            this.linkLabel2.TabIndex = 13;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Mais Informações: Planejamento Completo (pt-br)";
-            this.linkLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.linkLabel2.UseCompatibleTextRendering = true;
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Llb_Planejamento.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Llb_Planejamento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Llb_Planejamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Llb_Planejamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.Llb_Planejamento.LinkArea = new System.Windows.Forms.LinkArea(18, 33);
+            this.Llb_Planejamento.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Llb_Planejamento.Location = new System.Drawing.Point(993, 663);
+            this.Llb_Planejamento.Name = "Llb_Planejamento";
+            this.Llb_Planejamento.Size = new System.Drawing.Size(316, 52);
+            this.Llb_Planejamento.TabIndex = 13;
+            this.Llb_Planejamento.TabStop = true;
+            this.Llb_Planejamento.Text = "Mais Informações: Planejamento Completo (pt-br)";
+            this.Llb_Planejamento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Llb_Planejamento.UseCompatibleTextRendering = true;
+            this.Llb_Planejamento.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Llb_Planejamento.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.IrNoPlanejamento);
             // 
             // F_Jogo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.linkLabel2);
-            this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.customButton1);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Llb_Planejamento);
+            this.Controls.Add(this.Llb_Perfil);
+            this.Controls.Add(this.Btn_Reiniciar);
+            this.Controls.Add(this.Btn_Q8);
+            this.Controls.Add(this.Btn_Q1);
+            this.Controls.Add(this.Btn_Q7);
+            this.Controls.Add(this.Btn_Q6);
+            this.Controls.Add(this.Btn_Q3);
+            this.Controls.Add(this.Btn_Q2);
+            this.Controls.Add(this.Btn_Q5);
+            this.Controls.Add(this.Btn_Q0);
+            this.Controls.Add(this.Btn_Q4);
+            this.Controls.Add(this.Pbx_Grid);
+            this.Controls.Add(this.Lbl_PlacarO);
+            this.Controls.Add(this.Lbl_PlacarX);
+            this.Controls.Add(this.Pbx_PlacarO);
+            this.Controls.Add(this.Pbx_PlacarX);
+            this.Controls.Add(this.Lbl_Placar);
+            this.Controls.Add(this.Cbx_Dific);
+            this.Controls.Add(this.Lbl_Dific);
+            this.Controls.Add(this.Cbx_Modo);
+            this.Controls.Add(this.Lbl_ModoDeJogo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "F_Jogo";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TIC-TAC-TOE";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbx_Grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,28 +411,28 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private Controles.CustomButton customButton1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel2;
+        private System.Windows.Forms.Label Lbl_ModoDeJogo;
+        private System.Windows.Forms.ComboBox Cbx_Modo;
+        private System.Windows.Forms.ComboBox Cbx_Dific;
+        private System.Windows.Forms.Label Lbl_Dific;
+        private System.Windows.Forms.Label Lbl_Placar;
+        private System.Windows.Forms.PictureBox Pbx_PlacarX;
+        private System.Windows.Forms.PictureBox Pbx_PlacarO;
+        private System.Windows.Forms.Label Lbl_PlacarX;
+        private System.Windows.Forms.Label Lbl_PlacarO;
+        private System.Windows.Forms.PictureBox Pbx_Grid;
+        private System.Windows.Forms.Button Btn_Q4;
+        private System.Windows.Forms.Button Btn_Q0;
+        private System.Windows.Forms.Button Btn_Q5;
+        private System.Windows.Forms.Button Btn_Q2;
+        private System.Windows.Forms.Button Btn_Q3;
+        private System.Windows.Forms.Button Btn_Q6;
+        private System.Windows.Forms.Button Btn_Q7;
+        private System.Windows.Forms.Button Btn_Q1;
+        private System.Windows.Forms.Button Btn_Q8;
+        private Controles.CustomButton Btn_Reiniciar;
+        private System.Windows.Forms.LinkLabel Llb_Perfil;
+        private System.Windows.Forms.LinkLabel Llb_Planejamento;
     }
 }
 
