@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TIC_TAC_TOE
 {
-    public partial class Form1 : Form
+    public partial class F_Jogo : Form
     {
-        public Form1()
+        public F_Jogo()
         {
             InitializeComponent();
         }

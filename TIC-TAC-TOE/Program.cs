@@ -16,7 +16,7 @@ namespace TIC_TAC_TOE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new F_Jogo());
         }
     }
 }
