@@ -48,9 +48,9 @@
             this.Btn_Q7 = new System.Windows.Forms.Button();
             this.Btn_Q1 = new System.Windows.Forms.Button();
             this.Btn_Q8 = new System.Windows.Forms.Button();
-            this.Btn_Reiniciar = new TIC_TAC_TOE.Controles.CustomButton();
             this.Llb_Perfil = new System.Windows.Forms.LinkLabel();
             this.Llb_Planejamento = new System.Windows.Forms.LinkLabel();
+            this.Btn_Reiniciar = new TIC_TAC_TOE.Controles.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Grid)).BeginInit();
@@ -84,6 +84,7 @@
             this.Cbx_Modo.Name = "Cbx_Modo";
             this.Cbx_Modo.Size = new System.Drawing.Size(210, 32);
             this.Cbx_Modo.TabIndex = 0;
+            this.Cbx_Modo.SelectedIndexChanged += new System.EventHandler(this.MudarModo);
             // 
             // Cbx_Dific
             // 
@@ -103,6 +104,7 @@
             this.Cbx_Dific.Size = new System.Drawing.Size(210, 32);
             this.Cbx_Dific.TabIndex = 1;
             this.Cbx_Dific.Visible = false;
+            this.Cbx_Dific.SelectedIndexChanged += new System.EventHandler(this.MudarDificuldade);
             // 
             // Lbl_Dific
             // 
@@ -199,6 +201,7 @@
             this.Btn_Q4.Name = "Btn_Q4";
             this.Btn_Q4.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q4.TabIndex = 6;
+            this.Btn_Q4.Tag = "";
             this.Btn_Q4.UseVisualStyleBackColor = false;
             this.Btn_Q4.Click += new System.EventHandler(this.UsuarioJogou);
             // 
@@ -212,6 +215,7 @@
             this.Btn_Q0.Name = "Btn_Q0";
             this.Btn_Q0.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q0.TabIndex = 2;
+            this.Btn_Q0.Tag = "";
             this.Btn_Q0.UseVisualStyleBackColor = false;
             this.Btn_Q0.Click += new System.EventHandler(this.UsuarioJogou);
             // 
@@ -225,6 +229,7 @@
             this.Btn_Q5.Name = "Btn_Q5";
             this.Btn_Q5.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q5.TabIndex = 7;
+            this.Btn_Q5.Tag = "";
             this.Btn_Q5.UseVisualStyleBackColor = false;
             this.Btn_Q5.Click += new System.EventHandler(this.UsuarioJogou);
             // 
@@ -238,6 +243,7 @@
             this.Btn_Q2.Name = "Btn_Q2";
             this.Btn_Q2.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q2.TabIndex = 4;
+            this.Btn_Q2.Tag = "";
             this.Btn_Q2.UseVisualStyleBackColor = false;
             this.Btn_Q2.Click += new System.EventHandler(this.UsuarioJogou);
             // 
@@ -251,6 +257,7 @@
             this.Btn_Q3.Name = "Btn_Q3";
             this.Btn_Q3.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q3.TabIndex = 5;
+            this.Btn_Q3.Tag = "";
             this.Btn_Q3.UseVisualStyleBackColor = false;
             this.Btn_Q3.Click += new System.EventHandler(this.UsuarioJogou);
             // 
@@ -264,6 +271,7 @@
             this.Btn_Q6.Name = "Btn_Q6";
             this.Btn_Q6.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q6.TabIndex = 8;
+            this.Btn_Q6.Tag = "";
             this.Btn_Q6.UseVisualStyleBackColor = false;
             this.Btn_Q6.Click += new System.EventHandler(this.UsuarioJogou);
             // 
@@ -277,6 +285,7 @@
             this.Btn_Q7.Name = "Btn_Q7";
             this.Btn_Q7.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q7.TabIndex = 9;
+            this.Btn_Q7.Tag = "";
             this.Btn_Q7.UseVisualStyleBackColor = false;
             this.Btn_Q7.Click += new System.EventHandler(this.UsuarioJogou);
             // 
@@ -290,6 +299,7 @@
             this.Btn_Q1.Name = "Btn_Q1";
             this.Btn_Q1.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q1.TabIndex = 3;
+            this.Btn_Q1.Tag = "";
             this.Btn_Q1.UseVisualStyleBackColor = false;
             this.Btn_Q1.Click += new System.EventHandler(this.UsuarioJogou);
             // 
@@ -303,29 +313,9 @@
             this.Btn_Q8.Name = "Btn_Q8";
             this.Btn_Q8.Size = new System.Drawing.Size(177, 154);
             this.Btn_Q8.TabIndex = 10;
+            this.Btn_Q8.Tag = "";
             this.Btn_Q8.UseVisualStyleBackColor = false;
             this.Btn_Q8.Click += new System.EventHandler(this.UsuarioJogou);
-            // 
-            // Btn_Reiniciar
-            // 
-            this.Btn_Reiniciar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Btn_Reiniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.Btn_Reiniciar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.Btn_Reiniciar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(192)))));
-            this.Btn_Reiniciar.BorderRadius = 5;
-            this.Btn_Reiniciar.BorderSize = 2;
-            this.Btn_Reiniciar.FlatAppearance.BorderSize = 0;
-            this.Btn_Reiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Reiniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Reiniciar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Reiniciar.Location = new System.Drawing.Point(551, 681);
-            this.Btn_Reiniciar.Name = "Btn_Reiniciar";
-            this.Btn_Reiniciar.Size = new System.Drawing.Size(264, 36);
-            this.Btn_Reiniciar.TabIndex = 12;
-            this.Btn_Reiniciar.Text = "Reiniciar Jogo";
-            this.Btn_Reiniciar.TextColor = System.Drawing.Color.White;
-            this.Btn_Reiniciar.UseVisualStyleBackColor = false;
-            this.Btn_Reiniciar.Click += new System.EventHandler(this.ReiniciarJogo);
             // 
             // Llb_Perfil
             // 
@@ -365,6 +355,27 @@
             this.Llb_Planejamento.UseCompatibleTextRendering = true;
             this.Llb_Planejamento.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.Llb_Planejamento.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.IrNoPlanejamento);
+            // 
+            // Btn_Reiniciar
+            // 
+            this.Btn_Reiniciar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Btn_Reiniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Btn_Reiniciar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Btn_Reiniciar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(192)))));
+            this.Btn_Reiniciar.BorderRadius = 5;
+            this.Btn_Reiniciar.BorderSize = 2;
+            this.Btn_Reiniciar.FlatAppearance.BorderSize = 0;
+            this.Btn_Reiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Reiniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Reiniciar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Reiniciar.Location = new System.Drawing.Point(551, 681);
+            this.Btn_Reiniciar.Name = "Btn_Reiniciar";
+            this.Btn_Reiniciar.Size = new System.Drawing.Size(264, 36);
+            this.Btn_Reiniciar.TabIndex = 12;
+            this.Btn_Reiniciar.Text = "Reiniciar Jogo";
+            this.Btn_Reiniciar.TextColor = System.Drawing.Color.White;
+            this.Btn_Reiniciar.UseVisualStyleBackColor = false;
+            this.Btn_Reiniciar.Click += new System.EventHandler(this.ReiniciarJogo);
             // 
             // F_Jogo
             // 
