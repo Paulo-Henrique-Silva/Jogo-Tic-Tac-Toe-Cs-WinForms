@@ -94,6 +94,10 @@ namespace TIC_TAC_TOE
         {
             Button botao = sender as Button;
 
+            //evita que um quadrado já preenchido seja usado novamente
+            if (botao.Image != null)
+                return;
+
             //muda a imagem do botão conforme o usuário que jogou.
             botao.Tag = simbJogAtual;
             botao.Image = simbJogAtual == 'X' ? Properties.Resources.X_Jogo : Properties.Resources.O_Jogo;
