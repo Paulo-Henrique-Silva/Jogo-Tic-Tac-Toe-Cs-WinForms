@@ -29,6 +29,11 @@ namespace TIC_TAC_TOE
         private Grid gridAtual;
 
         /// <summary>
+        /// IA atual do jogo, no modo JvsC.
+        /// </summary>
+        private Computador compAtual;
+
+        /// <summary>
         /// Modo de jogo atual.
         /// </summary>
         private ModoDeJogo modoAtual;
@@ -78,6 +83,8 @@ namespace TIC_TAC_TOE
                 i.Enabled = true;
                 i.Tag = '\0';
             }
+
+            compAtual = new Computador(dificAtual);
         }
 
         private void ReiniciarJogo(object sender, EventArgs e)
@@ -92,29 +99,49 @@ namespace TIC_TAC_TOE
         /// <param name="e"></param>
         private void UsuarioJogou(object sender, EventArgs e)
         {
-            Button botao = sender as Button;
+            Button botaoEscolhido = sender as Button;
 
             //evita que um quadrado já preenchido seja usado novamente
-            if (botao.Image != null)
+            if (botaoEscolhido.Image != null)
                 return;
 
-            //muda a imagem do botão conforme o usuário que jogou.
-            botao.Tag = simbJogAtual;
-            botao.Image = simbJogAtual == 'X' ? Properties.Resources.X_Jogo : Properties.Resources.O_Jogo;
-
-            //Checa os cenários de fim de jogo para o jogador que acabou de jogar
-            if (gridAtual.EVitoria(simbJogAtual))
-                EncerrarPartida(simbJogAtual);
-            else if (gridAtual.EEmpate())
-                EncerrarPartida('\0');
-
-            if (modoAtual == ModoDeJogo.JvsJ)
+            if (Cbx_Modo.SelectedIndex == 0)
             {
+                //muda a imagem do botão conforme o usuário que jogou.
+                botaoEscolhido.Tag = simbJogAtual;
+                botaoEscolhido.Image = simbJogAtual == 'X' ? Properties.Resources.X_Jogo : Properties.Resources.O_Jogo;
+
+                //Checa os cenários de fim de jogo para o jogador que acabou de jogar
+                if (gridAtual.EVitoria(simbJogAtual))
+                    EncerrarPartida(simbJogAtual);
+                else if (gridAtual.EEmpate())
+                    EncerrarPartida('\0');
+
                 simbJogAtual = simbJogAtual == 'X' ? 'O' : 'X';
             }
             else
             {
+                //o usuário joga como X
+                botaoEscolhido.Tag = 'X';
+                botaoEscolhido.Image = Properties.Resources.X_Jogo;
 
+                if (gridAtual.EVitoria('X'))
+                    EncerrarPartida('X');
+                else if (gridAtual.EEmpate())
+                    EncerrarPartida('\0');
+                else //caso o jogador não tenha ganhado, o computador joga
+                {
+                    //Computador joga como O
+                    int quadComp = compAtual.Jogar(gridAtual); //O computador escolhe um quadrado para jogar
+
+                    gridAtual.Quadrados[quadComp].Tag = 'O';
+                    gridAtual.Quadrados[quadComp].Image = Properties.Resources.O_Jogo;
+
+                    if (gridAtual.EVitoria('O'))
+                        EncerrarPartida('O');
+                    else if (gridAtual.EEmpate())
+                        EncerrarPartida('\0');
+                }
             }
         }
 
@@ -159,7 +186,7 @@ namespace TIC_TAC_TOE
             else if (jogVencedor == 'O')
             {
                 MessageBox.Show("Jogador O venceu!");
-                Lbl_PlacarO.Text = (int.Parse(Lbl_PlacarX.Text) + 1).ToString();
+                Lbl_PlacarO.Text = (int.Parse(Lbl_PlacarO.Text) + 1).ToString();
             }
             else
             {
