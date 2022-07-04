@@ -11,7 +11,7 @@ namespace Tic_Tac_Toe_Logica
     /// </summary>
     public class Computador
     {
-        private Dificuldade dificIa;
+        private readonly Dificuldade dificIa;
 
         public Computador(Dificuldade dificJogo)
         {
@@ -45,7 +45,16 @@ namespace Tic_Tac_Toe_Logica
                     return EscolheAleatorio(grid);
 
                 case Dificuldade.Dificil:
-                    break;
+                    if ((quad = EscolheUmBomQuadrado(grid, 'O')) != -1)
+                        return quad;
+
+                    if ((quad = EscolheUmBomQuadrado(grid, 'X')) != -1)
+                        return quad;
+
+                    if ((quad = TentaEstrategia(grid)) != -1)
+                        return quad;
+
+                    return EscolheAleatorio(grid);
             }
 
             return -1;
@@ -101,6 +110,57 @@ namespace Tic_Tac_Toe_Logica
                 return 4;
             if (simbQuad[2] == simbJog && simbQuad[4] == simbJog && simbQuad[6] == '\0')
                 return 6;
+
+            return -1;
+        }
+
+        /// <summary>
+        /// O computador tenta jogar conforme a melhor estratégia existente em tic-tac-toe.
+        /// </summary>
+        /// <param name="grid"></param>
+        /// <returns>Retorna o número do quadrado, 0 a 8, para concretizar a estratégia. Se não for possível, retornará -1</returns>
+        private int TentaEstrategia(Grid grid)
+        {
+            //A estratégia consiste em priorizar os cantos ao máximo.
+            //Contudo caso o advérsio obtenha algum canto, a prioridade deve ser obter o centro.
+
+            char[] simbQuad = new char[9];
+
+            for (int i = 0; i < 9; i++)
+                simbQuad[i] = (char)grid.Quadrados[i].Tag;
+
+            if ((simbQuad[0] == 'X' || simbQuad[2] == 'X' || simbQuad[6] == 'X' || simbQuad[8] == 'X') && simbQuad[4] == '\0')
+                return 4;
+
+            if (simbQuad[0] == '\0' || simbQuad[2] == '\0' || simbQuad[6] == '\0' || simbQuad[8] == '\0')
+            {
+                int quadCanto = 0;
+
+                do
+                {
+                    switch (new Random().Next(1, 5))
+                    {
+                        case 1:
+                            quadCanto = 0;
+                            break;
+
+                        case 2:
+                            quadCanto = 2;
+                            break;
+
+                        case 3:
+                            quadCanto = 6;
+                            break;
+
+                        case 4:
+                            quadCanto = 8;
+                            break;
+                    }
+                }
+                while (simbQuad[quadCanto] != '\0');
+
+                return quadCanto;
+            }
 
             return -1;
         }
