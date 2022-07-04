@@ -22,26 +22,33 @@ namespace Tic_Tac_Toe_Logica
         /// Conforme a dificuldade, a Ia jogará no grid conforme as jogadas possíveis.
         /// </summary>
         /// <param name="grid"></param>
-        /// <returns></returns>
+        /// <returns>Retorna o número do quadrado escolhido pelo computador. Caso não tenha sido possível escolher, retorna -1.</returns>
         public int Jogar(Grid grid)
         {
-            int quad = 0;
+            int quad;
 
             switch (dificIa)
             {
                 case Dificuldade.Facil:
-                    if ((quad = EscolheUmBomQuadrado(grid, 'X')) == -1)
-                        quad = EscolheAleatorio(grid);
-                    break;
+                    if ((quad = EscolheUmBomQuadrado(grid, 'X')) != -1)
+                        return quad;
+
+                    return EscolheAleatorio(grid);
 
                 case Dificuldade.Medio:
-                    break;
+                    if ((quad = EscolheUmBomQuadrado(grid, 'O')) != -1)
+                        return quad;
+
+                    if ((quad = EscolheUmBomQuadrado(grid, 'X')) != -1)
+                        return quad;
+
+                    return EscolheAleatorio(grid);
 
                 case Dificuldade.Dificil:
                     break;
             }
 
-            return quad;
+            return -1;
         }
 
         /// <summary>
