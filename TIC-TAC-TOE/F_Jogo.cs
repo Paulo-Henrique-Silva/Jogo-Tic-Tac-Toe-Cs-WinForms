@@ -33,11 +33,6 @@ namespace TIC_TAC_TOE
         /// </summary>
         private Computador compAtual;
 
-        /// <summary>
-        /// Modo de jogo atual.
-        /// </summary>
-        private ModoDeJogo modoAtual;
-
         public F_Jogo()
         {
             InitializeComponent();
@@ -53,15 +48,11 @@ namespace TIC_TAC_TOE
         {
             if (Cbx_Modo.SelectedIndex == 0)
             {
-                modoAtual = ModoDeJogo.JvsJ;
-
                 Lbl_Dific.Visible = false;
                 Cbx_Dific.Visible = false;
             }
             else
             {
-                modoAtual = ModoDeJogo.JvsC;
-
                 Lbl_Dific.Visible = true;
                 Cbx_Dific.Visible = true;
             }
@@ -191,6 +182,13 @@ namespace TIC_TAC_TOE
             else
             {
                 MessageBox.Show("Empate!");
+            }
+
+            if (Lbl_PlacarX.Text == "99" || Lbl_PlacarO.Text == "99")
+            {
+                MessageBox.Show("O placar chegou ao valor máximo de 99. Para tanto os valores serão zerados.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Lbl_PlacarX.Text = "0";
+                Lbl_PlacarO.Text = "0";
             }
         }
 

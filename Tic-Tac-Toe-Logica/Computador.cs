@@ -11,6 +11,9 @@ namespace Tic_Tac_Toe_Logica
     /// </summary>
     public class Computador
     {
+        /// <summary>
+        /// Dificuldade da IA que define quais jogadas ela fará para derrotar o usuário.
+        /// </summary>
         private readonly Dificuldade dificIa;
 
         public Computador(Dificuldade dificJogo)
@@ -68,6 +71,9 @@ namespace Tic_Tac_Toe_Logica
         /// <returns>Retorna o número do quadrado, 0 a 8, que deve ser usado para completar uma sequência. Se não for possível completar, retornará -1 </returns>
         private int EscolheUmBomQuadrado(Grid grid, char simbJog)
         {
+            //Caso o simbJog for 'O', o computador tentará completar uma sequência de 'O'
+            //Entretanto caso seja 'X', o computador "completará" uma sequência de 'X' com 'O', ou seja, bloqueará o usuário.
+            //Basicamente usuando o mesmo método de maneira inversa
             char[] simbQuad = new char[9];
 
             for (int i = 0; i < 9; i++)
@@ -129,9 +135,11 @@ namespace Tic_Tac_Toe_Logica
             for (int i = 0; i < 9; i++)
                 simbQuad[i] = (char)grid.Quadrados[i].Tag;
 
+            //Caso obtenha algum canto
             if ((simbQuad[0] == 'X' || simbQuad[2] == 'X' || simbQuad[6] == 'X' || simbQuad[8] == 'X') && simbQuad[4] == '\0')
                 return 4;
 
+            //Prioriza os cantos, de maneira aleatória
             if (simbQuad[0] == '\0' || simbQuad[2] == '\0' || simbQuad[6] == '\0' || simbQuad[8] == '\0')
             {
                 int quadCanto = 0;
