@@ -50,10 +50,14 @@
             this.Btn_Q8 = new System.Windows.Forms.Button();
             this.Llb_Perfil = new System.Windows.Forms.LinkLabel();
             this.Llb_Planejamento = new System.Windows.Forms.LinkLabel();
+            this.Lbl_Turno = new System.Windows.Forms.Label();
             this.Btn_Reiniciar = new TIC_TAC_TOE.Controles.CustomButton();
+            this.Pbx_Resultado = new System.Windows.Forms.PictureBox();
+            this.Btn_Ok = new TIC_TAC_TOE.Controles.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Grid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbx_Resultado)).BeginInit();
             this.SuspendLayout();
             // 
             // Lbl_ModoDeJogo
@@ -356,6 +360,19 @@
             this.Llb_Planejamento.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
             this.Llb_Planejamento.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.IrNoPlanejamento);
             // 
+            // Lbl_Turno
+            // 
+            this.Lbl_Turno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_Turno.AutoSize = true;
+            this.Lbl_Turno.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Turno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.Lbl_Turno.Location = new System.Drawing.Point(1151, 82);
+            this.Lbl_Turno.Name = "Lbl_Turno";
+            this.Lbl_Turno.Size = new System.Drawing.Size(101, 25);
+            this.Lbl_Turno.TabIndex = 14;
+            this.Lbl_Turno.Text = "Vez de X";
+            this.Lbl_Turno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Btn_Reiniciar
             // 
             this.Btn_Reiniciar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -377,11 +394,47 @@
             this.Btn_Reiniciar.UseVisualStyleBackColor = false;
             this.Btn_Reiniciar.Click += new System.EventHandler(this.ReiniciarJogo);
             // 
+            // Pbx_Resultado
+            // 
+            this.Pbx_Resultado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Pbx_Resultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Pbx_Resultado.Location = new System.Drawing.Point(398, 155);
+            this.Pbx_Resultado.Name = "Pbx_Resultado";
+            this.Pbx_Resultado.Size = new System.Drawing.Size(570, 443);
+            this.Pbx_Resultado.TabIndex = 15;
+            this.Pbx_Resultado.TabStop = false;
+            this.Pbx_Resultado.Visible = false;
+            // 
+            // Btn_Ok
+            // 
+            this.Btn_Ok.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Btn_Ok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Btn_Ok.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Btn_Ok.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(192)))));
+            this.Btn_Ok.BorderRadius = 0;
+            this.Btn_Ok.BorderSize = 0;
+            this.Btn_Ok.FlatAppearance.BorderSize = 0;
+            this.Btn_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Ok.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.Btn_Ok.Location = new System.Drawing.Point(551, 540);
+            this.Btn_Ok.Name = "Btn_Ok";
+            this.Btn_Ok.Size = new System.Drawing.Size(264, 36);
+            this.Btn_Ok.TabIndex = 16;
+            this.Btn_Ok.Text = "Ok";
+            this.Btn_Ok.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(75)))));
+            this.Btn_Ok.UseVisualStyleBackColor = false;
+            this.Btn_Ok.Visible = false;
+            this.Btn_Ok.Click += new System.EventHandler(this.FechouResultado);
+            // 
             // F_Jogo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.Controls.Add(this.Btn_Ok);
+            this.Controls.Add(this.Pbx_Resultado);
+            this.Controls.Add(this.Lbl_Turno);
             this.Controls.Add(this.Llb_Planejamento);
             this.Controls.Add(this.Llb_Perfil);
             this.Controls.Add(this.Btn_Reiniciar);
@@ -415,6 +468,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Grid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pbx_Resultado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,6 +498,9 @@
         private Controles.CustomButton Btn_Reiniciar;
         private System.Windows.Forms.LinkLabel Llb_Perfil;
         private System.Windows.Forms.LinkLabel Llb_Planejamento;
+        private System.Windows.Forms.Label Lbl_Turno;
+        private System.Windows.Forms.PictureBox Pbx_Resultado;
+        private Controles.CustomButton Btn_Ok;
     }
 }
 

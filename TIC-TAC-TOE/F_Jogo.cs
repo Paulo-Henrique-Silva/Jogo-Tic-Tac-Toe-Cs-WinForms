@@ -46,13 +46,18 @@ namespace TIC_TAC_TOE
         /// </summary>
         private void ComecarPartida()
         {
+            Pbx_Resultado.Visible = false;
+            Btn_Ok.Visible = false;
+
             if (Cbx_Modo.SelectedIndex == 0)
             {
+                Lbl_Turno.Visible = true;
                 Lbl_Dific.Visible = false;
                 Cbx_Dific.Visible = false;
             }
             else
             {
+                Lbl_Turno.Visible = false;
                 Lbl_Dific.Visible = true;
                 Cbx_Dific.Visible = true;
             }
@@ -108,7 +113,16 @@ namespace TIC_TAC_TOE
                 else if (gridAtual.EEmpate())
                     EncerrarPartida('\0');
 
-                simbJogAtual = simbJogAtual == 'X' ? 'O' : 'X';
+                if (simbJogAtual == 'X')
+                {
+                    simbJogAtual = 'O';
+                    Lbl_Turno.Text = "Vez de O";
+                }
+                else
+                {
+                    simbJogAtual = 'X';
+                    Lbl_Turno.Text = "Vez de X";
+                }
             }
             else
             {
@@ -166,22 +180,26 @@ namespace TIC_TAC_TOE
         /// <param name="jogVencedor">Jogador que venceu a partida. Caso o valor seja nulo, será considerado como empate.</param>
         private void EncerrarPartida(char jogVencedor)
         {
+            Pbx_Resultado.Visible = true;
+            Btn_Ok.Visible = true;
+            Btn_Ok.BringToFront();
+
             foreach (var i in gridAtual.Quadrados)
                 i.Enabled = false;
 
             if (jogVencedor == 'X')
             {
-                MessageBox.Show("Jogador X venceu!");
+                Pbx_Resultado.Image = Properties.Resources.GanhouX;
                 Lbl_PlacarX.Text = (int.Parse(Lbl_PlacarX.Text) + 1).ToString();
             }
             else if (jogVencedor == 'O')
             {
-                MessageBox.Show("Jogador O venceu!");
+                Pbx_Resultado.Image = Properties.Resources.GanhouO;
                 Lbl_PlacarO.Text = (int.Parse(Lbl_PlacarO.Text) + 1).ToString();
             }
             else
             {
-                MessageBox.Show("Empate!");
+                Pbx_Resultado.Image = Properties.Resources.EmpateImg;
             }
 
             if (Lbl_PlacarX.Text == "99" || Lbl_PlacarO.Text == "99")
@@ -200,6 +218,12 @@ namespace TIC_TAC_TOE
         private void IrNoPlanejamento(object sender, LinkLabelLinkClickedEventArgs e)
         {
             //System.Diagnostics.Process.Start("");
+        }
+
+        private void FechouResultado(object sender, EventArgs e)
+        {
+            Btn_Ok.Visible = false;
+            Pbx_Resultado.Visible = false;
         }
     }
 }
