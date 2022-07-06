@@ -51,9 +51,9 @@
             this.Llb_Perfil = new System.Windows.Forms.LinkLabel();
             this.Llb_Planejamento = new System.Windows.Forms.LinkLabel();
             this.Lbl_Turno = new System.Windows.Forms.Label();
-            this.Btn_Reiniciar = new TIC_TAC_TOE.Controles.CustomButton();
             this.Pbx_Resultado = new System.Windows.Forms.PictureBox();
             this.Btn_Ok = new TIC_TAC_TOE.Controles.CustomButton();
+            this.Btn_Reiniciar = new TIC_TAC_TOE.Controles.CustomButton();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_PlacarO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pbx_Grid)).BeginInit();
@@ -373,27 +373,6 @@
             this.Lbl_Turno.Text = "Vez de X";
             this.Lbl_Turno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Btn_Reiniciar
-            // 
-            this.Btn_Reiniciar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Btn_Reiniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.Btn_Reiniciar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
-            this.Btn_Reiniciar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(192)))));
-            this.Btn_Reiniciar.BorderRadius = 5;
-            this.Btn_Reiniciar.BorderSize = 2;
-            this.Btn_Reiniciar.FlatAppearance.BorderSize = 0;
-            this.Btn_Reiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Btn_Reiniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Reiniciar.ForeColor = System.Drawing.Color.White;
-            this.Btn_Reiniciar.Location = new System.Drawing.Point(551, 681);
-            this.Btn_Reiniciar.Name = "Btn_Reiniciar";
-            this.Btn_Reiniciar.Size = new System.Drawing.Size(264, 36);
-            this.Btn_Reiniciar.TabIndex = 12;
-            this.Btn_Reiniciar.Text = "Reiniciar Jogo";
-            this.Btn_Reiniciar.TextColor = System.Drawing.Color.White;
-            this.Btn_Reiniciar.UseVisualStyleBackColor = false;
-            this.Btn_Reiniciar.Click += new System.EventHandler(this.ReiniciarJogo);
-            // 
             // Pbx_Resultado
             // 
             this.Pbx_Resultado.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -427,8 +406,30 @@
             this.Btn_Ok.Visible = false;
             this.Btn_Ok.Click += new System.EventHandler(this.FechouResultado);
             // 
+            // Btn_Reiniciar
+            // 
+            this.Btn_Reiniciar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Btn_Reiniciar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Btn_Reiniciar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
+            this.Btn_Reiniciar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(171)))), ((int)(((byte)(192)))));
+            this.Btn_Reiniciar.BorderRadius = 5;
+            this.Btn_Reiniciar.BorderSize = 2;
+            this.Btn_Reiniciar.FlatAppearance.BorderSize = 0;
+            this.Btn_Reiniciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_Reiniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Reiniciar.ForeColor = System.Drawing.Color.White;
+            this.Btn_Reiniciar.Location = new System.Drawing.Point(551, 681);
+            this.Btn_Reiniciar.Name = "Btn_Reiniciar";
+            this.Btn_Reiniciar.Size = new System.Drawing.Size(264, 36);
+            this.Btn_Reiniciar.TabIndex = 12;
+            this.Btn_Reiniciar.Text = "Reiniciar Jogo";
+            this.Btn_Reiniciar.TextColor = System.Drawing.Color.White;
+            this.Btn_Reiniciar.UseVisualStyleBackColor = false;
+            this.Btn_Reiniciar.Click += new System.EventHandler(this.ReiniciarJogo);
+            // 
             // F_Jogo
             // 
+            this.AcceptButton = this.Btn_Reiniciar;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1350, 729);
@@ -461,7 +462,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "F_Jogo";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TIC-TAC-TOE";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

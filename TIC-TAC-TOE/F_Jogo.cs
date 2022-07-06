@@ -217,7 +217,7 @@ namespace TIC_TAC_TOE
 
         private void IrNoPlanejamento(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            //System.Diagnostics.Process.Start("");
+            System.Diagnostics.Process.Start("https://drive.google.com/file/d/10wS9I40KW8Q4jcRa_k2g0XTi8iw7zaIY/view?usp=sharing");
         }
 
         private void FechouResultado(object sender, EventArgs e)
