@@ -92,7 +92,7 @@
             // 
             // Cbx_Dific
             // 
-            this.Cbx_Dific.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cbx_Dific.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Cbx_Dific.BackColor = System.Drawing.Color.White;
             this.Cbx_Dific.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cbx_Dific.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -112,7 +112,7 @@
             // 
             // Lbl_Dific
             // 
-            this.Lbl_Dific.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Lbl_Dific.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Lbl_Dific.AutoSize = true;
             this.Lbl_Dific.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_Dific.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(197)))), ((int)(((byte)(220)))));
